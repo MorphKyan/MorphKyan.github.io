@@ -96,13 +96,17 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="欢迎来到MorphKyan的博客，这是第一篇，也是一个开始~ 环境1.安装Githttps://git-scm.com/download/win 2.配置Git12git config --global user.name &quot;MorphKyan&quot;git config --global user.email &quot;morphkyan@gmail.com&quot;  3.生成密钥1ssh-keygen -t rs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="V2ray Vps">
+<meta property="og:url" content="http://yoursite.com/2019/06/05/Hexo配置与使用/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="欢迎来到MorphKyan的博客，这是第一篇，也是一个开始~ 环境1.安装Githttps://git-scm.com/download/win 2.配置Git12git config --global user.name &quot;MorphKyan&quot;git config --global user.email &quot;morphkyan@gmail.com&quot;  3.生成密钥1ssh-keygen -t rs">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-06T02:09:58.318Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="V2ray Vps">
+<meta name="twitter:description" content="欢迎来到MorphKyan的博客，这是第一篇，也是一个开始~ 环境1.安装Githttps://git-scm.com/download/win 2.配置Git12git config --global user.name &quot;MorphKyan&quot;git config --global user.email &quot;morphkyan@gmail.com&quot;  3.生成密钥1ssh-keygen -t rs">
 
 
 
@@ -110,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/05/Hexo配置与使用/">
 
 
 
@@ -120,7 +124,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>V2ray Vps | Hexo</title>
   
 
 
@@ -168,8 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -207,7 +210,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -269,457 +272,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/06/cron定时任务/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/06/cron定时任务/" class="post-title-link" itemprop="url">cron定时任务</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">نوشته شده در</span>
-              
-
-              
-                
-              
-
-              <time title="ایجاد شده: 2019-06-06 20:08:04 / تغییر یافته: 20:15:37" itemprop="dateCreated datePublished" datetime="2019-06-06T20:08:04+08:00">2019-06-06</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#查看</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/crontab</span><br><span class="line">crontab -l //列出当前的所有调度任务</span><br><span class="line">crontab -l -u jp   //列出用户jp的所有调度任务</span><br></pre></td></tr></table></figure>
-
-<p>#时间设置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 文件格式說明</span><br><span class="line">#  ——分鐘（0 - 59）</span><br><span class="line"># |  ——小時（0 - 23）</span><br><span class="line"># | |  ——日（1 - 31）</span><br><span class="line"># | | |  ——月（1 - 12）</span><br><span class="line"># | | | |  ——星期（0 - 7，星期日=0或7）</span><br><span class="line"># | | | | |</span><br><span class="line"># * * * * * 被執行的命令</span><br></pre></td></tr></table></figure>
-
-<p>注：<br>    1.在“星期域”（第五个域），0和7都被视为星期日。<br>    2.不很直观的用法：如果日期和星期同时被设置，那么其中的一个条件被满足时，指令便会被运行。<br>    3.前5个域称之<strong>分时日月周</strong>，可方便个人记忆。<br>符号：<br>    “*”代表取值范围内的数字<br>    “/”代表”每”<br>    “-”代表从某个数字到某个数字<br>    “,”分开几个离散的数字</p>
-<p>#添加</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
-
-<p>#例子</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">59 1 1-7 4 0 /root/shift_my_times.sh</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/06/Nano-文本编辑/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/06/Nano-文本编辑/" class="post-title-link" itemprop="url">Nano 文本编辑</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">نوشته شده در</span>
-              
-
-              
-                
-              
-
-              <time title="ایجاد شده: 2019-06-06 19:59:18 / تغییر یافته: 20:07:11" itemprop="dateCreated datePublished" datetime="2019-06-06T19:59:18+08:00">2019-06-06</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#打开</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano 文件名</span><br></pre></td></tr></table></figure>
-
-<p>#保存<br>Ctrl + O<br>确认文件名时可Ctrl + C取消</p>
-<p>#退出<br>Ctrl + X</p>
-<p>#剪切一行<br>Ctrl + K 将光标移至目标行Ctrl + U<br>可剪切多行，并一次粘贴</p>
-<p>#剪切<br>Alt + A标记，再按一次取消<br>Ctrl + K剪切，Ctrl + U粘贴</p>
-<p>#搜索<br>Ctrl + W(指WhereIs)，再次搜索相同Alt + W</p>
-<p>#注意<br>Ctrl+W被写成了^W Alt+W被写成了M-W。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/06/CRLF-LF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/06/CRLF-LF/" class="post-title-link" itemprop="url">CRLF && LF</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">نوشته شده در</span>
-              
-
-              
-                
-              
-
-              <time title="ایجاد شده: 2019-06-06 19:54:51 / تغییر یافته: 19:57:38" itemprop="dateCreated datePublished" datetime="2019-06-06T19:54:51+08:00">2019-06-06</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="CRLF"><a href="#CRLF" class="headerlink" title="CRLF"></a>CRLF</h1><p>Carriage-Return Line-Feed即回车换行<br>回车(CR, ASCII 13, \r) 换行(LF, ASCII 10, \n)<br>在Windows中广泛使用来标识一行的结束</p>
-<h1 id="LF"><a href="#LF" class="headerlink" title="LF"></a>LF</h1><p>在Linux/UNIX系统中只有换行符LF。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -751,10 +306,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/05/Hexo配置与使用/" class="post-title-link" itemprop="url">V2ray Vps</a>
+          <h1 class="post-title" itemprop="name headline">V2ray Vps
+
               
             
           </h1>
@@ -830,9 +383,7 @@
       
 
       
-        
-          
-            <p>欢迎来到MorphKyan的博客，这是第一篇，也是一个开始~</p>
+        <p>欢迎来到MorphKyan的博客，这是第一篇，也是一个开始~</p>
 <h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><h2 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h2><p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a></p>
 <h2 id="2-配置Git"><a href="#2-配置Git" class="headerlink" title="2.配置Git"></a>2.配置Git</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "MorphKyan"</span><br><span class="line">git config --global user.email "morphkyan@gmail.com"</span><br></pre></td></tr></table></figure>
 
@@ -864,8 +415,6 @@
 hexo clean
 hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
 
-          
-        
       
     </div>
 
@@ -888,12 +437,28 @@ hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/06/CRLF-LF/" rel="prev" title="CRLF && LF">
+                CRLF && LF <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -903,14 +468,15 @@ hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -930,8 +496,17 @@ hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            فهرست مطالب
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            نمای کلی
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -977,6 +552,23 @@ hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境"><span class="nav-number">1.</span> <span class="nav-text">环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Git"><span class="nav-number">1.1.</span> <span class="nav-text">1.安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置Git"><span class="nav-number">1.2.</span> <span class="nav-text">2.配置Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-生成密钥"><span class="nav-number">1.3.</span> <span class="nav-text">3.生成密钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-测试是否成功"><span class="nav-number">1.4.</span> <span class="nav-text">4.测试是否成功</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装NodeJs"><span class="nav-number">1.5.</span> <span class="nav-text">安装NodeJs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.6.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Hexo"><span class="nav-number">2.</span> <span class="nav-text">使用Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-新建"><span class="nav-number">2.1.</span> <span class="nav-text">1.新建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-生成"><span class="nav-number">2.2.</span> <span class="nav-text">2.生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-本地测试"><span class="nav-number">2.3.</span> <span class="nav-text">3.本地测试</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github上传"><span class="nav-number">3.</span> <span class="nav-text">Github上传</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-建库"><span class="nav-number">3.1.</span> <span class="nav-text">1.建库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-本地配置"><span class="nav-number">3.2.</span> <span class="nav-text">2.本地配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-上传"><span class="nav-number">3.3.</span> <span class="nav-text">3.上传</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1105,6 +697,10 @@ hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -1120,6 +716,8 @@ hexo g -d</code></pre><p>INFO Deploy done: git则为成功</p>
 
   
 
+
+  
 
 
   
