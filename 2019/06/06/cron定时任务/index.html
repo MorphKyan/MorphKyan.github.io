@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="#查看 123cat /etc/crontabcrontab -l //列出当前的所有调度任务crontab -l -u jp   //列出用户jp的所有调度任务  #时间设置 12345678# 文件格式說明#  ——分鐘（0 - 59）# |  ——小時（0 - 23）# | |  ——日（1 - 31）# | | |  ——月（1 - 12）# | | | |  ——星期（0 - 7，星期日">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-06T12:15:37.618Z">
+<meta property="og:updated_time" content="2019-06-06T12:19:02.895Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cron定时任务">
 <meta name="twitter:description" content="#查看 123cat /etc/crontabcrontab -l //列出当前的所有调度任务crontab -l -u jp   //列出用户jp的所有调度任务  #时间设置 12345678# 文件格式說明#  ——分鐘（0 - 59）# |  ——小時（0 - 23）# | |  ——日（1 - 31）# | | |  ——月（1 - 12）# | | | |  ——星期（0 - 7，星期日">
@@ -192,7 +192,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="تغییر ناوبری">
+    <button aria-label="Navigationsleiste an/ausschalten">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -220,7 +220,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>صفحه اصلی</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
 
   </li>
         
@@ -237,7 +237,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>بایگانی</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
 
   </li>
 
@@ -325,14 +325,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">نوشته شده در</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
 
               
                 
               
 
-              <time title="ایجاد شده: 2019-06-06 20:08:04 / تغییر یافته: 20:15:37" itemprop="dateCreated datePublished" datetime="2019-06-06T20:08:04+08:00">2019-06-06</time>
+              <time title="Erstellt: 2019-06-06 20:08:04 / Geändert am: 20:19:02" itemprop="dateCreated datePublished" datetime="2019-06-06T20:08:04+08:00">2019-06-06</time>
             
 
             
@@ -382,7 +382,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
 
 <p>#例子</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">59 1 1-7 4 0 /root/shift_my_times.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">59 1 1-7 4 0 /root/shift_my_times.sh</span><br><span class="line">*/1 * * * * /usr/bin/curl  http://172.16.0.106/index.php/Home/Index/crons	<span class="comment">#每分钟访问这个URL一次</span></span><br></pre></td></tr></table></figure>
+
+<p>#cron服务控制</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">service crond start			//启动服务</span><br><span class="line">service crond stop			//关闭服务</span><br><span class="line">service crond restart		//重启服务</span><br><span class="line">service crond reload		//重新载入配置</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -481,7 +484,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">پست ها</span>
+                    <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
               
@@ -538,7 +541,7 @@
 </div>
 
 
-  <div class="powered-by">قدرت گرفته از <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -546,7 +549,7 @@
 
 
 
-  <div class="theme-info">پوسته – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.2</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.2</div>
 
 
 
